@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1000"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="Sometimes It happens that you forget your mobile somewhere and you are not able to find your mobile or you are going somewhere and you forget your mobile at home and now you need to know contact of someone.\nSo Don't Worry now this App is here to help you just text in some fixed pattern and you will get your Solution." />
+
+    </ScrollView>
+
+</LinearLayout>

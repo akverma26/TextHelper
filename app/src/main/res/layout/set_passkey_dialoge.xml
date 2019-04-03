@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#151625">
+
+    <EditText
+        android:id="@+id/passEdit"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:textColor="#B98A9F"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_height="50sp" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#FFF"
+            android:id="@+id/cancel"
+            android:background="#1C1D33"
+            android:padding="10dp"
+            android:text="Cancel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#FFF"
+            android:id="@+id/setPassKey"
+            android:padding="10dp"
+            android:background="#1C1D33"
+            android:text="Set PassKey"/>
+
+    </LinearLayout>
+
+</LinearLayout>

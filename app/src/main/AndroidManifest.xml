@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="akvindian.mhelper">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/my_ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/my_ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".BGDetector"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <receiver android:name=".Receiver"
+            android:exported="true"
+            android:enabled="true">
+
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".StartService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <data android:scheme="package" android:path="akvindian.mhelper" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
